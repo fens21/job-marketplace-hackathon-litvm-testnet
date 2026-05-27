@@ -99,6 +99,7 @@ function AppContent() {
   const isWrongNetwork = entered && chainId !== 4441
 
   const connectWallet = async () => {
+    console.log('Connect wallet button clicked')
     setLoading(true)
     try {
       const accounts = await window.ethereum?.request({ method: 'eth_requestAccounts' }) as string[]

@@ -8,7 +8,21 @@ export function LandingPage({ onConnect, loading }: { onConnect: () => void; loa
         <h1 style={{ fontSize: 56, color: '#fff', margin: 0, letterSpacing: '-2px' }}>zkCompute Hub</h1>
         <p style={{ fontSize: 20, opacity: 0.7, marginTop: 12 }}>Verifiable Compute Marketplace on Litecoin Rollup</p>
         <div style={{ marginTop: 60 }}>
-          <button onClick={onConnect} disabled={loading} style={{ background: '#ffd700', color: '#000', border: 'none', padding: '18px 60px', fontSize: 18, fontWeight: 700, cursor: 'pointer', borderRadius: 8, opacity: loading ? 0.6 : 1 }}>
+          <button 
+            onClick={onConnect} 
+            disabled={loading} 
+            style={{ 
+              background: '#ffd700', 
+              color: '#000', 
+              border: 'none', 
+              padding: '18px 60px', 
+              fontSize: 18, 
+              fontWeight: 700, 
+              cursor: loading ? 'not-allowed' : 'pointer', 
+              borderRadius: 8, 
+              opacity: loading ? 0.6 : 1 
+            }}
+          >
             {loading ? 'CONNECTING...' : 'CONNECT WALLET TO ENTER'}
           </button>
         </div>
