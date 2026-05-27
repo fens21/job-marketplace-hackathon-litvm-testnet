@@ -15,7 +15,7 @@ export const litforge = {
   }
 } as const satisfies Chain
 
-export const CONTRACT_ADDRESS = import.meta.env.VITE_CONTRACT_ADDRESS || '0x0000000000000000000000000000000000000000'
+export const CONTRACT_ADDRESS = import.meta.env.VITE_CONTRACT_ADDRESS || '0x26535Da2049484FFc858c6C4bE47C2095a32975d'
 export const USDC_ADDRESS = '0xd5118dEe968d1533B2A57aB66C266010AD8957fa'
 
 export const config = createConfig({
