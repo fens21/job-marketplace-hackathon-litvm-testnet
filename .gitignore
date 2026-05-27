@@ -1,3 +1,20 @@
+# Dependencies
+node_modules
+/.pnp
+.pnp.js
+.pnpm-store
+.yarn
+
+# Production Build
+dist
+build
+.output
+
+# Testing
+coverage
+*.lcov
+.nyc_output
+
 # Logs
 logs
 *.log
@@ -7,19 +24,41 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
 
-# Editor directories and files
+# Editor & IDE
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Hardhat & Blockchain
+artifacts/
+cache/
+typechain/
+*.db
+*.sqlite
+*.sqlite3
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+.vite/
+
+# Temporary
+tmp/
+temp/
